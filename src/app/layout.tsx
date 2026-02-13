@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { AuthProvider } from '@/contexts/AuthContext';
 import { SessionProvider } from '@/contexts/SessionContext';
 import { PWARegister } from '@/components/PWARegister';
+import { InstallPWA } from '@/components/InstallPWA';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         <PWARegister />
+        <InstallPWA variant="banner" />
         <AuthProvider>
           <SessionProvider>{children}</SessionProvider>
         </AuthProvider>
