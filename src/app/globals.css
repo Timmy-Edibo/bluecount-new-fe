@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --muted: #64748b;
+  --accent: #38bdf8;
+  --success: #34d399;
+  --warning: #fbbf24;
+}
+
+body {
+  background: var(--bg);
+  color: #e2e8f0;
+  min-height: 100vh;
+}
